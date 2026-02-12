@@ -13,11 +13,10 @@
             background-color: #0047AB; 
             color: white;
             padding: 20px 30px;
-            /* Flexbox settings to align items side-by-side */
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 20px; /* Space between the text and the logo */
+            gap: 20px; 
             box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         }
         .header-text {
@@ -27,19 +26,35 @@
             text-transform: uppercase;
         }
         .header-logo {
-            height: 50px; /* Adjust height to match your text size */
+            height: 50px; 
             width: auto;
             display: block;
         }
+        .auth-note {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 18px;
+            font-style: italic;
+            color: #0047AB;
+            font-weight: 500;
+        }
         .certificate-body {
             max-width: 500px;
-            margin: 50px auto;
+            margin: 10px auto; /* Reduced top margin to fit note */
             background: white;
             padding: 40px;
             border: 2px solid #0047AB;
             border-radius: 8px;
             text-align: center;
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .guarantee-note {
+            text-align: center;
+            margin-top: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 1px;
         }
         h2 {
             color: #0047AB;
@@ -73,6 +88,10 @@
         <img src="lg.png" alt="Logo" class="header-logo">
     </div>
 
+    <div class="auth-note">
+        This product is authentic and completely genuine
+    </div>
+
     <div class="certificate-body">
         <h2>Attested Silver Bar</h2>
         
@@ -90,6 +109,15 @@
             <span class="label">Tolerance:</span>
             <span class="value">+/- 0.050 g</span>
         </div>
+
+        <div class="info-row">
+            <span class="label">Manufacturer:</span>
+            <span class="value">CHAMAN CHANDI WALA</span>
+        </div>
+    </div>
+
+    <div class="guarantee-note">
+        This product is guaranteed by CHAMAN CHANDI WALA
     </div>
 
 </body>
